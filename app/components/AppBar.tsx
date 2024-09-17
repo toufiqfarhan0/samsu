@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "./ModeToggle";
 
 export const AppBar = () => {
   const session = useSession();
@@ -39,7 +38,6 @@ export const AppBar = () => {
               About Us
             </span>
           </Link>
-          <ModeToggle />
         </div>
 
         <div className="hidden md:flex items-center gap-8">
