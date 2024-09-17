@@ -1,12 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export const AppBar = () => {
-  const session = useSession();
 
   return (
     <nav className="sticky mx-auto wrapper top-0 z-50 flex items-center gap-2 py-6 w-[90vw]">
