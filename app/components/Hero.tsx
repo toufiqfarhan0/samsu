@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/ui/spotlight";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
@@ -21,24 +20,6 @@ export default function Hero() {
     };
   }, []);
 
-  const floatingVariant = {
-    initial: { y: 0, opacity: 0 },
-    animate: {
-      y: [0, -10, 0],
-      opacity: 1,
-      transition: {
-        y: {
-          duration: 3,
-          ease: "easeInOut",
-          repeat: Infinity,
-        },
-        opacity: {
-          duration: 0.8,
-          ease: "easeInOut",
-        },
-      },
-    },
-  };
 
   return (
     <div className="flex flex-col gap-4 h-[50vh] md:h-[75vh] size-screen mx-auto justify-center">

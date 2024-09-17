@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { ModeToggle } from "./ModeToggle";
 import { useSession } from "next-auth/react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
