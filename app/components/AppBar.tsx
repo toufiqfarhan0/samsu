@@ -40,7 +40,7 @@ export const AppBar = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           <Button
             className="h-10 w-30 text-lg bg-gradient-to-b from-purple-400 to-purple-700 text-white hover:from-purple-500 hover:to-purple-800 transition-colors duration-300"
             size={"lg"}
