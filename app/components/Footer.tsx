@@ -65,16 +65,10 @@ const Footer = () => {
                 Privacy Policy
               </Link>
               <Link
-                href={"/shipping-delivery-policy"}
+                href={"/spd"}
                 className="text-foreground/75 transition-all duration-300 hover:text-purple-600"
               >
                 Shipping & Delivery Policy
-              </Link>
-              <Link
-                href={"/privacy-policy"}
-                className="text-foreground/75 transition-all duration-300 hover:text-purple-600"
-              >
-                Privacy & Policy
               </Link>
               <Link
                 href={"/contact-us"}

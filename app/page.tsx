@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 
 export default function Home() {
-  return <div className="flex flex-col items-center justify-center overflow-hidden">
+  return <div className="flex flex-col items-center justify-center overflow-hidden" id="home">
   <AppBar />
   <Hero />
   <Content />

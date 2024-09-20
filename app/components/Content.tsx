@@ -3,7 +3,7 @@ import { InfiniteMovingCardsDemo } from "./InfinieCards";
 
 const Content = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-4 py-6 md:py-12">
+    <div className="flex flex-col justify-center items-center px-4 py-6 md:py-12" id="features">
       <div className="mb-6 text-center">
         <h1 className="text-3xl md:text-4xl font-semibold">
           What do we offer?

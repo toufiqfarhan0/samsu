@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-[60vw] mb-20 gap-4">
+    <div className="flex flex-col justify-center items-center w-[60vw] mb-20 gap-4" id="aboutus">
       <div className="flex items-center justify-center">
         <h1 className="text-4xl font-semibold">About Us</h1>
       </div>
-      <div className="flex items-center justify-center text-lg font-medium">
+      <div className="flex items-center justify-center text-lg font-medium w-[60vw]">
         <p>
           Welcome to <span className="font-bold bg-gradient-to-b from-purple-400 to-purple-700 bg-clip-text text-transparent">Samsu</span> a dynamic hub where creativity meets connectivity,
           and commerce flourishes. At Samsu, we're dedicated to empowering

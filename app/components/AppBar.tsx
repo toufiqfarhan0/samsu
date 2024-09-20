@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+//@ts-ignore
+import { Link } from "react-scroll";
+import ContactForm from "./contact-form";
 
 export const AppBar = () => {
-
   return (
     <nav className="sticky mx-auto wrapper top-0 z-50 flex items-center gap-2 py-6 w-[90vw]">
       <motion.div
@@ -19,19 +20,33 @@ export const AppBar = () => {
         }}
         className="flex w-full justify-between mx-auto bg-secondary/15 shadow-lg shadow-neutral-600/5 backdrop-blur-lg border border-primary/10 p-4 rounded-2xl"
       >
-        <Link href={"/"} className="flex items-center gap-2 cursor-pointer">
+        <Link to="home" className="flex items-center gap-2 cursor-pointer">
           <span className="text-lg font-bold tracking-tight text-foreground">
             Samsu
           </span>
         </Link>
 
         <div className="flex justify-center items-center gap-4">
-          <Link href={"/"} className="flex items-center gap-2 cursor-pointer">
+          <Link
+            to="features"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="flex items-center gap-2 cursor-pointer"
+          >
             <span className="text-lg tracking-tight text-foreground hover:text-slate-600">
               Features
             </span>
           </Link>
-          <Link href={"/"} className="flex items-center gap-2 cursor-pointer">
+          <Link
+            to="aboutus"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="flex items-center gap-2 cursor-pointer"
+          >
             <span className="text-lg tracking-tight text-foreground hover:text-slate-600">
               About Us
             </span>
@@ -39,12 +54,7 @@ export const AppBar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <Button
-            className="h-10 w-30 text-lg bg-gradient-to-b from-purple-400 to-purple-700 text-white hover:from-purple-500 hover:to-purple-800 transition-colors duration-300"
-            size={"lg"}
-          >
-            Let's talk
-          </Button>
+          <ContactForm />
         </div>
       </motion.div>
     </nav>
