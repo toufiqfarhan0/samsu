@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-center">
           <h1 className="tracking-tighter text-5xl md:text-6xl xl:text-7xl text-center font-bold my-2">
             <span className="font-bold bg-gradient-to-b from-purple-400 to-purple-700 bg-clip-text text-transparent">
-              Samsu
+              Samsu Toufiq farhan 
             </span>{" "}
             beckons you into a realm where creativity and commerce intertwine
           </h1>
